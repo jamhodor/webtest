@@ -10,4 +10,5 @@ db.sqlite3
 
 notes.txt
 
-webtest/data
+
+/src/data/
