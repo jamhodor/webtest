@@ -27,6 +27,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'homepage',
+    'tinymce',
 ]
 
 MIDDLEWARE = [
@@ -117,4 +118,13 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'data/', 'static/')
 MEDIA_URL = '/media/'
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'data/', 'media/')
+
+
+TINYMCE_DEFAULT_CONFIG = {
+    'height': 360,
+    'width': 760,
+    'cleanup_on_startup': True,
+    'custom_undo_redo_levels': 10,
+    'theme': 'advanced',
+    }
 
