@@ -1,11 +1,11 @@
 from django.shortcuts import render
-from homepage.models import TestModel
+from homepage.models import Post
 # Create your views here.
 
 def home(request):
-    test = TestModel.objects.get(pk=2)
+    posts = Post.objects.all()
     context = {
-        "test": test,
+        "posts": posts,
     }
     return render(request, 'homepage/home.html', context)
 
